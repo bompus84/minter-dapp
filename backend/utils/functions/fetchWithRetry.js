@@ -25,8 +25,10 @@ function fetchNoRetry(url, options) {
         })
         .catch((error) => {
           console.error(`CATCH ERROR: ${error}`);
-        });
-  });
+          console.error(`CATCH ERROR: ${error.status}`);
+          console.error(`CATCH ERROR: ${error.response}`);
+          });
+      });
 }
 
 function fetchWithRetry(url, options) {
