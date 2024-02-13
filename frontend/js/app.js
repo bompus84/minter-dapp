@@ -173,7 +173,7 @@ async function loadInfo() {
     actionButton.classList.add('hidden');
     mintButton.innerText = button_public_mint;
     mintContainer.classList.remove('hidden');
-    setTotalPrice();
+    setTotalPrice(publicMintActive, presaleMintActive);
   } else if (presaleMintActive) {
     startTime = window.info.runtimeConfig.publicMintStart;
     mainHeading.innerText = h1_presale_mint;
@@ -200,7 +200,7 @@ async function loadInfo() {
       mainText.innerText = p_presale_mint_already_minted;
       actionButton.innerText = button_presale_already_minted;
     }
-    setTotalPrice();
+    setTotalPrice(publicMintActive, presaleMintActive);
   } else {
     startTime = window.info.runtimeConfig.presaleMintStart;
     mainHeading.innerText = h1_presale_coming_soon;
@@ -228,7 +228,7 @@ async function loadInfo() {
   } else if (chain === 'polygon') {
     priceType = 'MATIC';
   }
-  const price = 0;
+  price = 0;
   if(presaleMintActive){
     price = web3.utils.fromWei(info.runtimeConfig.presaleMintPrice, 'ether');
   }
@@ -256,22 +256,22 @@ async function loadInfo() {
     let value = parseInt(mintInput.value) - 1 || 1;
     if(!min || value >= min) {
       mintInput.value = value;
-      setTotalPrice()
+      setTotalPrice(publicMintActive, presaleMintActive)
     }
   };
   mintIncrement.onclick = () => {
     let value = parseInt(mintInput.value) + 1 || 1;
     if(!max || value <= max) {
       mintInput.value = value;
-      setTotalPrice()
+      setTotalPrice(publicMintActive, presaleMintActive)
     }
   };
   setQtyMax.onclick = () => {
     mintInput.value = max;
-    setTotalPrice()
+    setTotalPrice(publicMintActive, presaleMintActive)
   };
   mintInput.onchange = () => {
-    setTotalPrice()
+    setTotalPrice(publicMintActive, presaleMintActive)
   };
   mintInput.onkeyup = async (e) => {
     if (e.keyCode === 13) {
@@ -281,9 +281,7 @@ async function loadInfo() {
   mintButton.onclick = mint;
 }
 
-function setTotalPrice() {
-  const publicMintActive = contract.methods.mintingActive().call();
-  const presaleMintActive = contract.methods.presaleActive().call();
+function setTotalPrice(publicMintActive, presaleMintActive) {
   const mintInput = document.getElementById("mintInput");
   const mintInputValue = parseInt(mintInput.value);
   const totalPrice = document.getElementById("totalPrice");
@@ -295,7 +293,7 @@ function setTotalPrice() {
     return;
   }
 
-  const mintPrice = 0;
+  mintPrice = 0;
   if(presaleMintActive){
     mintPrice = info.runtimeConfig.presaleMintPrice;
   }
@@ -326,7 +324,7 @@ async function mint() {
   const publicMintActive = await contract.methods.mintingActive().call();
   const presaleMintActive = await contract.methods.presaleActive().call();
   const amount = parseInt(document.getElementById("mintInput").value);
-  const mintPrice = 0;
+  mintPrice = 0;
   if(presaleMintActive){
     mintPrice = info.runtimeConfig.presaleMintPrice;
   }
