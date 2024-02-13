@@ -26,6 +26,7 @@
     "upload_metadata": "node utils/nftport/uploadMetas",
     "deploy_contract": "node utils/nftport/deployContract",
     "get_contract": "node utils/nftport/retrieveContract",
+    "update_mint_price": "node utils/nftport/updateContract.js -u mint_price",
     "update_presale_mint_price": "node utils/nftport/updateContract.js -u presale_mint_price",
     "update_public_mint_start_date": "node utils/nftport/updateContract.js -u public_mint_start_date",
     "update_presale_mint_start_date": "node utils/nftport/updateContract.js -u presale_mint_start_date",

@@ -228,7 +228,14 @@ async function loadInfo() {
   } else if (chain === 'polygon') {
     priceType = 'MATIC';
   }
-  const price = web3.utils.fromWei(info.runtimeConfig.presaleMintPrice, 'ether');
+  const price = 0;
+  if(presaleMintActive){
+    price = web3.utils.fromWei(info.runtimeConfig.presaleMintPrice, 'ether');
+  }
+  else if(publicMintActive){
+    price = web3.utils.fromWei(info.runtimeConfig.publicMintPrice, 'ether');
+  }
+
   const pricePerMint = document.getElementById("pricePerMint");
   const maxPerMint = document.getElementById("maxPerMint");
   const totalSupply = document.getElementById("totalSupply");
@@ -275,6 +282,8 @@ async function loadInfo() {
 }
 
 function setTotalPrice() {
+  const publicMintActive = contract.methods.mintingActive().call();
+  const presaleMintActive = contract.methods.presaleActive().call();
   const mintInput = document.getElementById("mintInput");
   const mintInputValue = parseInt(mintInput.value);
   const totalPrice = document.getElementById("totalPrice");
@@ -285,7 +294,16 @@ function setTotalPrice() {
     mintInput.disabled = true;
     return;
   }
-  const totalPriceWei = BigInt(info.runtimeConfig.presaleMintPrice) * BigInt(mintInputValue);
+
+  const mintPrice = 0;
+  if(presaleMintActive){
+    mintPrice = info.runtimeConfig.presaleMintPrice;
+  }
+  else if(publicMintActive){
+    mintPrice = info.runtimeConfig.publicMintPrice;
+  }
+
+  const totalPriceWei = BigInt(mintPrice) * BigInt(mintInputValue);
   
   let priceType = '';
   if(chain === 'goerli' || chain === 'ethereum') {
@@ -305,10 +323,17 @@ async function mint() {
   const spinner = '<div class="dot-elastic"></div><span>Waiting for transaction...</span>';
   mintButton.innerHTML = spinner;
 
-  const amount = parseInt(document.getElementById("mintInput").value);
-  const value = BigInt(info.runtimeConfig.presaleMintPrice) * BigInt(amount);
   const publicMintActive = await contract.methods.mintingActive().call();
   const presaleMintActive = await contract.methods.presaleActive().call();
+  const amount = parseInt(document.getElementById("mintInput").value);
+  const mintPrice = 0;
+  if(presaleMintActive){
+    mintPrice = info.runtimeConfig.presaleMintPrice;
+  }
+  else if(publicMintActive){
+    mintPrice = info.runtimeConfig.publicMintPrice;
+  }
+  const value = BigInt(mintPrice) * BigInt(amount);
 
   if (publicMintActive) {
     // PUBLIC MINT
