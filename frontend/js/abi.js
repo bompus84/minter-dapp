@@ -37,6 +37,11 @@ const abi = [
               "internalType": "address payable",
               "name": "treasuryAddress",
               "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "mintPrice",
+              "type": "uint256"
             }
           ],
           "internalType": "struct NFTCollection.DeploymentConfig",
@@ -550,7 +555,12 @@ const abi = [
                   "internalType": "address payable",
                   "name": "treasuryAddress",
                   "type": "address"
-                }
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "mintPrice",
+                  "type": "uint256"
+                }    
               ],
               "internalType": "struct NFTCollection.DeploymentConfig",
               "name": "deploymentConfig",
@@ -731,6 +741,11 @@ const abi = [
               "internalType": "address payable",
               "name": "treasuryAddress",
               "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "mintPrice",
+              "type": "uint256"
             }
           ],
           "internalType": "struct NFTCollection.DeploymentConfig",
