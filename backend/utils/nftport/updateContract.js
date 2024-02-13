@@ -23,6 +23,7 @@
     ROYALTY_SHARE,
     ROYALTY_ADDRESS,
     PRESALE_WHITELISTED_ADDRESSES,
+    PRESALE_MINT_PRICE
   } = require(`${basePath}/src/config.js`);
 
   const contract = {
@@ -59,6 +60,10 @@
   };
 
   switch (options.update) {
+    case "presale_mint_price":
+      contract.presale_mint_price = PRESALE_MINT_PRICE;
+      updateValue = PRESALE_MINT_PRICE;
+      break;
     case "public_mint_start_date":
       contract.public_mint_start_date = PUBLIC_MINT_START_DATE;
       updateValue = PUBLIC_MINT_START_DATE;

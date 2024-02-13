@@ -61,12 +61,13 @@ const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a singl
 const PUBLIC_MINT_START_DATE = "2024-03-20T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
 
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PRESALE_MINT_START_DATE = "2024-02-16T11:30:48+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
+const PRESALE_MINT_START_DATE = "2024-02-13T11:30:48+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
 const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
 const ROYALTY_ADDRESS = "0x6A1e57bA01E0Ca19d6D39780De60A038217B1A90"; // Address that will receive the royalty
 const BASE_URI = null; // only update if you want to manually set the base uri
 const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the prereveal token uri
 const PRESALE_WHITELISTED_ADDRESSES = []; // only update if you want to manually set the whitelisted addresses
+const PRESALE_MINT_PRICE = 0.005; // Presale minting price per NFT. Goerli = ETH, Ethereum = ETH, Polygon = MATIC.
 
 // ** OPTIONAL **
 let CONTRACT_ADDRESS = "0x9AA1bC5C5F416dde289c4f63365057966bd80Fbe"; // If you want to manually include it
@@ -191,6 +192,7 @@ module.exports = {
   MAX_SUPPLY,
   MINT_PRICE,
   TOKENS_PER_MINT,
+  PRESALE_MINT_PRICE,
   PRESALE_MINT_START_DATE,
   PUBLIC_MINT_START_DATE,
   BASE_URI,
