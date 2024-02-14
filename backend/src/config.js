@@ -65,7 +65,7 @@ const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the ro
 const ROYALTY_ADDRESS = "0x6A1e57bA01E0Ca19d6D39780De60A038217B1A90"; // Address that will receive the royalty
 const BASE_URI = null; // only update if you want to manually set the base uri
 const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the prereveal token uri
-const PRESALE_WHITELISTED_ADDRESSES = []; // only update if you want to manually set the whitelisted addresses
+const PRESALE_WHITELISTED_ADDRESSES = ["0x6A1e57bA01E0Ca19d6D39780De60A038217B1A90"]; // only update if you want to manually set the whitelisted addresses
 const PRESALE_MINT_PRICE = 0.00001; // Presale minting price per NFT. Goerli = ETH, Ethereum = ETH, Polygon = MATIC.
 const MINT_PRICE = 0.00002; // Minting price per NFT. Goerli = ETH, Ethereum = ETH, Polygon = MATIC.!
 
