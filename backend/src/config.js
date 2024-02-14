@@ -7,8 +7,8 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "TestEyes Collection";
-const description = "This is the test eyes collection";
+const namePrefix = "BOMPUS_EYES";
+const description = "This is the bompus eyes collection";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 const layerConfigurations = [
@@ -37,7 +37,7 @@ const format = {
 };
 
 const extraMetadata = {
-  external_url: "https://codecats.xyz", // Replace with your website or remove this line if you do not have one.
+//  external_url: "https://codecats.xyz", // Replace with your website or remove this line if you do not have one.
 };
 
 // NFTPort Info
@@ -48,8 +48,8 @@ const LIMIT = 2; // Your API key rate limit
 const CHAIN = 'goerli'; // only goerli, polygon, or ethereum
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
-const CONTRACT_NAME = 'CRYPTO_EYES';
-const CONTRACT_SYMBOL = 'CE';
+const CONTRACT_NAME = 'BOMPUS_EYES';
+const CONTRACT_SYMBOL = 'BPE';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0x6A1e57bA01E0Ca19d6D39780De60A038217B1A90';
 const TREASURY_ADDRESS = '0x6A1e57bA01E0Ca19d6D39780De60A038217B1A90';
@@ -70,12 +70,12 @@ const PRESALE_MINT_PRICE = 0.00001; // Presale minting price per NFT. Goerli = E
 const MINT_PRICE = 0.00002; // Minting price per NFT. Goerli = ETH, Ethereum = ETH, Polygon = MATIC.!
 
 // ** OPTIONAL **
-let CONTRACT_ADDRESS = "0x9AA1bC5C5F416dde289c4f63365057966bd80Fbe"; // If you want to manually include it
+let CONTRACT_ADDRESS = ""; // If you want to manually include it
 
 // Generic Metadata is optional if you want to reveal your NFTs
 const GENERIC = true; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
 const GENERIC_TITLE = CONTRACT_NAME; // Replace with what you want the generic titles to say if you want it to be different from the contract name.
-const GENERIC_DESCRIPTION = "Which eyes will you get?"; // Replace with what you want the generic descriptions to say.
+const GENERIC_DESCRIPTION = "Which bompus eyes will you get?"; // Replace with what you want the generic descriptions to say.
 const GENERIC_IMAGE = "https://ipfs.io/ipfs/bafkreihojgqrmlpzlbp4jmwmtcvoahggelg2kf7qcav4kukghc4dgtof6y"; // Replace with your generic image that will display for all NFTs pre-reveal.
 
 // Automatically set contract address if deployed using the deployContract.js script

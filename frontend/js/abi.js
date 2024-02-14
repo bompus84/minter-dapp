@@ -197,7 +197,8 @@ const abi = [
       }
     ],
     "name": "Approval",
-    "type": "event"
+    "type": "event",
+    "signature": "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925"
   },
   {
     "anonymous": false,
@@ -222,7 +223,8 @@ const abi = [
       }
     ],
     "name": "ApprovalForAll",
-    "type": "event"
+    "type": "event",
+    "signature": "0x17307eab39ab6107e8899845ad3d59bd9653f200f220920489ca2b5937696c31"
   },
   {
     "anonymous": false,
@@ -235,7 +237,8 @@ const abi = [
       }
     ],
     "name": "Initialized",
-    "type": "event"
+    "type": "event",
+    "signature": "0x7f26b83ff96e1f2b6a682f133852f6798a09c465da95921460cefb3847402498"
   },
   {
     "anonymous": false,
@@ -254,7 +257,8 @@ const abi = [
       }
     ],
     "name": "OwnershipTransferred",
-    "type": "event"
+    "type": "event",
+    "signature": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0"
   },
   {
     "anonymous": false,
@@ -279,7 +283,8 @@ const abi = [
       }
     ],
     "name": "RoleAdminChanged",
-    "type": "event"
+    "type": "event",
+    "signature": "0xbd79b86ffe0ab8e8776151514217cd7cacd52c909f66475c3af44e129f0b00ff"
   },
   {
     "anonymous": false,
@@ -304,7 +309,8 @@ const abi = [
       }
     ],
     "name": "RoleGranted",
-    "type": "event"
+    "type": "event",
+    "signature": "0x2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d"
   },
   {
     "anonymous": false,
@@ -329,7 +335,8 @@ const abi = [
       }
     ],
     "name": "RoleRevoked",
-    "type": "event"
+    "type": "event",
+    "signature": "0xf6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b"
   },
   {
     "anonymous": false,
@@ -354,7 +361,8 @@ const abi = [
       }
     ],
     "name": "Transfer",
-    "type": "event"
+    "type": "event",
+    "signature": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
   },
   {
     "inputs": [],
@@ -367,7 +375,9 @@ const abi = [
       }
     ],
     "stateMutability": "view",
-    "type": "function"
+    "type": "function",
+    "constant": true,
+    "signature": "0x75b238fc"
   },
   {
     "inputs": [],
@@ -380,7 +390,9 @@ const abi = [
       }
     ],
     "stateMutability": "view",
-    "type": "function"
+    "type": "function",
+    "constant": true,
+    "signature": "0xa217fddf"
   },
   {
     "inputs": [],
@@ -393,7 +405,9 @@ const abi = [
       }
     ],
     "stateMutability": "view",
-    "type": "function"
+    "type": "function",
+    "constant": true,
+    "signature": "0xa3f4df7e"
   },
   {
     "inputs": [],
@@ -406,7 +420,9 @@ const abi = [
       }
     ],
     "stateMutability": "view",
-    "type": "function"
+    "type": "function",
+    "constant": true,
+    "signature": "0x9da5b0a5"
   },
   {
     "inputs": [],
@@ -419,7 +435,9 @@ const abi = [
       }
     ],
     "stateMutability": "view",
-    "type": "function"
+    "type": "function",
+    "constant": true,
+    "signature": "0xffa1ad74"
   },
   {
     "inputs": [
@@ -437,7 +455,8 @@ const abi = [
     "name": "approve",
     "outputs": [],
     "stateMutability": "nonpayable",
-    "type": "function"
+    "type": "function",
+    "signature": "0x095ea7b3"
   },
   {
     "inputs": [],
@@ -450,7 +469,9 @@ const abi = [
       }
     ],
     "stateMutability": "view",
-    "type": "function"
+    "type": "function",
+    "constant": true,
+    "signature": "0x7ecc2b56"
   },
   {
     "inputs": [
@@ -469,7 +490,9 @@ const abi = [
       }
     ],
     "stateMutability": "view",
-    "type": "function"
+    "type": "function",
+    "constant": true,
+    "signature": "0x70a08231"
   },
   {
     "inputs": [],
@@ -482,7 +505,9 @@ const abi = [
       }
     ],
     "stateMutability": "view",
-    "type": "function"
+    "type": "function",
+    "constant": true,
+    "signature": "0xe8a3d485"
   },
   {
     "inputs": [
@@ -501,7 +526,9 @@ const abi = [
       }
     ],
     "stateMutability": "view",
-    "type": "function"
+    "type": "function",
+    "constant": true,
+    "signature": "0x081812fc"
   },
   {
     "inputs": [],
@@ -630,7 +657,9 @@ const abi = [
       }
     ],
     "stateMutability": "view",
-    "type": "function"
+    "type": "function",
+    "constant": true,
+    "signature": "0x5a9b0b89"
   },
   {
     "inputs": [
@@ -649,7 +678,9 @@ const abi = [
       }
     ],
     "stateMutability": "view",
-    "type": "function"
+    "type": "function",
+    "constant": true,
+    "signature": "0x248a9ca3"
   },
   {
     "inputs": [
@@ -667,7 +698,8 @@ const abi = [
     "name": "grantRole",
     "outputs": [],
     "stateMutability": "nonpayable",
-    "type": "function"
+    "type": "function",
+    "signature": "0x2f2ff15d"
   },
   {
     "inputs": [
@@ -691,7 +723,9 @@ const abi = [
       }
     ],
     "stateMutability": "view",
-    "type": "function"
+    "type": "function",
+    "constant": true,
+    "signature": "0x91d14854"
   },
   {
     "inputs": [
@@ -808,7 +842,8 @@ const abi = [
     "name": "initialize",
     "outputs": [],
     "stateMutability": "nonpayable",
-    "type": "function"
+    "type": "function",
+    "signature": "0xd1bff694"
   },
   {
     "inputs": [
@@ -832,7 +867,9 @@ const abi = [
       }
     ],
     "stateMutability": "view",
-    "type": "function"
+    "type": "function",
+    "constant": true,
+    "signature": "0xe985e9c5"
   },
   {
     "inputs": [
@@ -856,7 +893,9 @@ const abi = [
       }
     ],
     "stateMutability": "view",
-    "type": "function"
+    "type": "function",
+    "constant": true,
+    "signature": "0x5a23dd99"
   },
   {
     "inputs": [
@@ -869,7 +908,9 @@ const abi = [
     "name": "mint",
     "outputs": [],
     "stateMutability": "payable",
-    "type": "function"
+    "type": "function",
+    "payable": true,
+    "signature": "0xa0712d68"
   },
   {
     "inputs": [],
@@ -882,7 +923,9 @@ const abi = [
       }
     ],
     "stateMutability": "view",
-    "type": "function"
+    "type": "function",
+    "constant": true,
+    "signature": "0x31f9c919"
   },
   {
     "inputs": [],
@@ -895,7 +938,9 @@ const abi = [
       }
     ],
     "stateMutability": "view",
-    "type": "function"
+    "type": "function",
+    "constant": true,
+    "signature": "0x06fdde03"
   },
   {
     "inputs": [],
@@ -908,7 +953,9 @@ const abi = [
       }
     ],
     "stateMutability": "view",
-    "type": "function"
+    "type": "function",
+    "constant": true,
+    "signature": "0x8da5cb5b"
   },
   {
     "inputs": [
@@ -927,7 +974,9 @@ const abi = [
       }
     ],
     "stateMutability": "view",
-    "type": "function"
+    "type": "function",
+    "constant": true,
+    "signature": "0x6352211e"
   },
   {
     "inputs": [],
@@ -940,7 +989,9 @@ const abi = [
       }
     ],
     "stateMutability": "view",
-    "type": "function"
+    "type": "function",
+    "constant": true,
+    "signature": "0x53135ca0"
   },
   {
     "inputs": [
@@ -958,7 +1009,9 @@ const abi = [
     "name": "presaleMint",
     "outputs": [],
     "stateMutability": "payable",
-    "type": "function"
+    "type": "function",
+    "payable": true,
+    "signature": "0xe3e1e8ef"
   },
   {
     "inputs": [
@@ -976,7 +1029,8 @@ const abi = [
     "name": "renounceRole",
     "outputs": [],
     "stateMutability": "nonpayable",
-    "type": "function"
+    "type": "function",
+    "signature": "0x36568abe"
   },
   {
     "inputs": [
@@ -994,7 +1048,8 @@ const abi = [
     "name": "reserveMint",
     "outputs": [],
     "stateMutability": "nonpayable",
-    "type": "function"
+    "type": "function",
+    "signature": "0xb0ea1802"
   },
   {
     "inputs": [],
@@ -1007,7 +1062,9 @@ const abi = [
       }
     ],
     "stateMutability": "view",
-    "type": "function"
+    "type": "function",
+    "constant": true,
+    "signature": "0x5c629f4c"
   },
   {
     "inputs": [
@@ -1025,7 +1082,8 @@ const abi = [
     "name": "revokeRole",
     "outputs": [],
     "stateMutability": "nonpayable",
-    "type": "function"
+    "type": "function",
+    "signature": "0xd547741f"
   },
   {
     "inputs": [
@@ -1054,7 +1112,9 @@ const abi = [
       }
     ],
     "stateMutability": "view",
-    "type": "function"
+    "type": "function",
+    "constant": true,
+    "signature": "0x2a55205a"
   },
   {
     "inputs": [
@@ -1077,7 +1137,8 @@ const abi = [
     "name": "safeTransferFrom",
     "outputs": [],
     "stateMutability": "nonpayable",
-    "type": "function"
+    "type": "function",
+    "signature": "0x42842e0e"
   },
   {
     "inputs": [
@@ -1105,7 +1166,8 @@ const abi = [
     "name": "safeTransferFrom",
     "outputs": [],
     "stateMutability": "nonpayable",
-    "type": "function"
+    "type": "function",
+    "signature": "0xb88d4fde"
   },
   {
     "inputs": [
@@ -1123,7 +1185,8 @@ const abi = [
     "name": "setApprovalForAll",
     "outputs": [],
     "stateMutability": "nonpayable",
-    "type": "function"
+    "type": "function",
+    "signature": "0xa22cb465"
   },
   {
     "inputs": [
@@ -1142,7 +1205,9 @@ const abi = [
       }
     ],
     "stateMutability": "view",
-    "type": "function"
+    "type": "function",
+    "constant": true,
+    "signature": "0x01ffc9a7"
   },
   {
     "inputs": [],
@@ -1155,7 +1220,9 @@ const abi = [
       }
     ],
     "stateMutability": "view",
-    "type": "function"
+    "type": "function",
+    "constant": true,
+    "signature": "0x95d89b41"
   },
   {
     "inputs": [
@@ -1174,7 +1241,9 @@ const abi = [
       }
     ],
     "stateMutability": "view",
-    "type": "function"
+    "type": "function",
+    "constant": true,
+    "signature": "0xc87b56dd"
   },
   {
     "inputs": [],
@@ -1187,7 +1256,9 @@ const abi = [
       }
     ],
     "stateMutability": "view",
-    "type": "function"
+    "type": "function",
+    "constant": true,
+    "signature": "0x18160ddd"
   },
   {
     "inputs": [
@@ -1200,7 +1271,8 @@ const abi = [
     "name": "transferAdminRights",
     "outputs": [],
     "stateMutability": "nonpayable",
-    "type": "function"
+    "type": "function",
+    "signature": "0xb5106add"
   },
   {
     "inputs": [
@@ -1223,7 +1295,8 @@ const abi = [
     "name": "transferFrom",
     "outputs": [],
     "stateMutability": "nonpayable",
-    "type": "function"
+    "type": "function",
+    "signature": "0x23b872dd"
   },
   {
     "inputs": [
@@ -1236,7 +1309,8 @@ const abi = [
     "name": "transferOwnership",
     "outputs": [],
     "stateMutability": "nonpayable",
-    "type": "function"
+    "type": "function",
+    "signature": "0xf2fde38b"
   },
   {
     "inputs": [
@@ -1311,13 +1385,15 @@ const abi = [
     "name": "updateConfig",
     "outputs": [],
     "stateMutability": "nonpayable",
-    "type": "function"
+    "type": "function",
+    "signature": "0xd761aa48"
   },
   {
     "inputs": [],
     "name": "withdrawFees",
     "outputs": [],
     "stateMutability": "nonpayable",
-    "type": "function"
+    "type": "function",
+    "signature": "0x476343ee"
   }
 ]
